@@ -9,11 +9,11 @@ export default function NameLogo() {
       component='a'
       href='/'
       sx={{
-        mr: 2,
+        mr: 4,
         display: { xs: 'flex', md: 'flex' },
         fontFamily: 'monospace',
         fontWeight: 700,
-        letterSpacing: '.3rem',
+        letterSpacing: '.2rem',
         color: '#eceff1',
         textDecoration: 'none'
       }}

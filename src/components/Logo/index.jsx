@@ -9,9 +9,11 @@ export default function Logo() {
       image={logo}
       alt="logo-personal"
       sx={{
+        ml: 2,
+        px: 2,
         width: 40,
         height: 40,
-        display: { xs: 'flex', md: 'flex' }, mr: 2
+        display: { xs: 'flex', md: 'center' }
       }}
     >
     </CardMedia>

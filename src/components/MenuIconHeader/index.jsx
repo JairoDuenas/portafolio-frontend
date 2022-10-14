@@ -1,51 +1,78 @@
-import { Box, IconButton, MenuItem } from '@mui/material';
-import React from 'react'
+import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+
+import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
-import Menu from '@mui/material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
+import WorkIcon from '@mui/icons-material/Work';
+import InfoIcon from '@mui/icons-material/Info';
+import { useNavigate } from 'react-router-dom';
 
 export default function MenuIconHeader() {
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [openDrawer, setOpenDrawer] = useState(null);
 
-  const open = Boolean(anchorEl);
+  const open = Boolean(openDrawer)
+  
+  const onClose = () => {
+    setOpenDrawer(null);
+  }
+  const navigate = useNavigate();
+  
+  const pages = [
+    {
+      text: 'Home', 
+      icon: <HomeIcon />,
+      onClick: () => navigate('/'),
+    },
+    {
+      text: 'Dossier',
+      icon: <WorkIcon />,
+      onClick: () => navigate('/dossier'),
+    },
+    {
+      text: 'About',
+      icon: <InfoIcon />,
+      onClick: () => navigate('/about'),
+    }
+    ];
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   return (
-    <Box sx={{
-      flexGrow: 1,
-      display: { xs: 'flex', md: 'none' }
-    }} >
+    <React.Fragment>
+      <Drawer
+        open={open}
+        onClose={onClose}
+      >
+        <List>
+          {
+            pages.map((item, index) => {
+              const { text, icon, onClick } = item;
+              return (
+                <ListItemButton
+                  
+                  onClick={onClick}
+                  key={text}
+              >
+                  {icon && <ListItemIcon>{icon}</ListItemIcon>}
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              )
+          })}
+        </List>
+      </Drawer>
       <IconButton
-        id='basic-Icon'
-        size='large'
-        aria-controls={open ? '' : undefined}
-        aria-haspopup='true'
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
+        sx={{
+          ml: 1,
+          display: {
+            xs: 'flex',
+            sm: 'flex',
+            md: 'none'
+          }
+        }}
+        onClick={() => setOpenDrawer(!openDrawer)}
         color='inherit'
       >
-      <MenuIcon />
+        <MenuIcon />
       </IconButton>
-      <Menu 
-        
-        id='basic-menu'
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-Icon',
-          
-        }}
-      >
-        <MenuItem onClick={handleClose}>Portafolio</MenuItem>
-        <MenuItem onClick={handleClose}>About</MenuItem>
-
-      </Menu>
-    </Box>
-  )
-}
+    </React.Fragment>
+      )
+    }

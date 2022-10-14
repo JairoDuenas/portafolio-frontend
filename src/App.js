@@ -4,7 +4,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./routes/Homepage";
 import AboutPage from "./routes/AboutPage";
 import NotFoundPage from "./routes/NotFoundPage";
-import PortafolioPage from "./routes/PortafolioPage";
+import DossierPage from "./routes/DossierPage";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/portafolio" element={<PortafolioPage />} />
+        <Route path="/dossier" element={<DossierPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </HashRouter>

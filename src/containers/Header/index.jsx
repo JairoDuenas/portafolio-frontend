@@ -8,10 +8,10 @@ import NameLogo from '../../components/NameLogo';
 export default function Header() {
 
   return (
-    <AppBar position='fixed' sx={{background: '#212121', borderRadius: '10px'}}>
-      <Container maxWidth='xl'>
-        <Toolbar disableGutters>
-          <MenuIconHeader />
+    <AppBar position='fixed' sx={{ p: 0.2, background: '#212121'}}>
+      <Container maxWidth='xl' sx={{p: 0}}>
+        <Toolbar sx={{px: 1}}>
+          <MenuIconHeader  />
           <Logo />
           <NameLogo />
           <MenuHeader />
