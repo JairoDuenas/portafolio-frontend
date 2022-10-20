@@ -30,6 +30,7 @@ export default function MainButtons() {
         direction={{ xs: 'column', sm: 'row' }}
         spacing={{xs: 4, sm: 4}}>
         <Button
+          className='go-dossier'
           variant='contained'
           color='info'
           size='large'
@@ -37,6 +38,7 @@ export default function MainButtons() {
         >Dossier
         </Button>
         <Button
+          className='go-about'
           variant='contained'
           color='info'
           size='large'
@@ -44,18 +46,17 @@ export default function MainButtons() {
         >About
         </Button>
         <Link
-          component='button'
+          className='download-cv'
           underline='none'
           href={documentPdf}
           target='_blank'
-          
         >
           <Button
             variant='contained'
             size='large'
             color='secondary'
           >
-            Download CV en pdf
+            Download CV pdf
           </Button>
         </Link>
       </Stack>
