@@ -1,11 +1,11 @@
 import React from "react";
-import './App.css';
+import '../styles/App.css';
 import { HashRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./routes/Homepage";
-import AboutPage from "./routes/AboutPage";
-import NotFoundPage from "./routes/NotFoundPage";
-import DossierPage from "./routes/DossierPage";
-import Pdf from "./pages/Pdf";
+import HomePage from "../pages/Homepage";
+import AboutPage from "../pages/AboutPage";
+import NotFoundPage from "../pages/NotFoundPage";
+import DossierPage from "../pages/DossierPage";
+import Pdf from "../pages/PdfPage";
 
 function App() {
   return (

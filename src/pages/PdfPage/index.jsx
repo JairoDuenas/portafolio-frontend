@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material';
 import React from 'react'
 
-export default function Pdf() {
+export default function PdfPage() {
   return (
     <Stack
       position='absolute'

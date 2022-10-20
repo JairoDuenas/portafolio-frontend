@@ -25,10 +25,10 @@ export default function MainButtons() {
     >
       <Stack
         className='buttons'
-        width='95%'
+        width='80%'
         justifyContent='center'
         direction={{ xs: 'column', sm: 'row' }}
-        spacing={{xs: 2, sm: 4}}>
+        spacing={{xs: 4, sm: 4}}>
         <Button
           variant='contained'
           color='info'
@@ -44,12 +44,15 @@ export default function MainButtons() {
         >About
         </Button>
         <Link
+          component='button'
+          underline='none'
           href={documentPdf}
           target='_blank'
+          
         >
           <Button
-            size='large'
             variant='contained'
+            size='large'
             color='secondary'
           >
             Download CV en pdf
