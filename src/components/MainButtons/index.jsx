@@ -1,14 +1,13 @@
 import React from 'react'
-import { Button, Link, Stack } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import documentPdf from '../../docs/cv_dev_Jhon_Jairo_Dueñas_Vega-09-2022.pdf';
 
 export default function MainButtons() {
   const navigate = useNavigate();
 
-  const onDossier = (event) => {
+  const onPortafolio = (event) => {
     event.preventDefault();
-    navigate('/dossier')
+    navigate('/portafolio')
   }
 
   const onAbout = (event) => {
@@ -17,49 +16,25 @@ export default function MainButtons() {
   }
 
   return (
-    <Stack
-      className='main-buttons'
-      width='100%'
-      alignItems='center'
-      marginTop='20px'
-    >
-      <Stack
-        className='buttons'
-        width='80%'
-        justifyContent='center'
-        direction={{ xs: 'column', sm: 'row' }}
-        spacing={{xs: 4, sm: 4}}>
-        <Button
-          className='go-dossier'
-          variant='contained'
-          color='info'
-          size='large'
-          onClick={onDossier}
-        >Dossier
-        </Button>
-        <Button
-          className='go-about'
-          variant='contained'
-          color='info'
-          size='large'
-          onClick={onAbout}
-        >About
-        </Button>
-        <Link
-          className='download-cv'
-          underline='none'
-          href={documentPdf}
-          target='_blank'
-        >
-          <Button
-            variant='contained'
-            size='large'
-            color='secondary'
-          >
-            Download CV pdf
-          </Button>
-        </Link>
-      </Stack>
-    </Stack>
+    <div className='container'>
+      <div
+        className='row row-cols-1 row-cols-sm-1 row-cols-md-4 gap-2 mx-auto mt-4'
+        style={{justifyContent: "center"}}
+      >
+      <button className='col btn btn-primary btn-lg go-portafolio' type="button" onClick={onPortafolio}>
+        Portafolio
+      </button>
+      <button className='col btn btn-secondary btn-lg go-about' onClick={onAbout}>
+        About
+      </button>
+      <a class="col btn btn-info btn-lg" role="button"
+        href={documentPdf}
+        rel="noopener noreferrer"
+        target='_blank'
+      >
+        Download CV pdf
+      </a>
+      </div>
+      </div>
   )
 }

@@ -6,8 +6,8 @@ export default function Logo() {
     <img
       className="d-inline-block"
       alt="logo"
-      width='65'
-      height='65'
+      width='60'
+      height='60'
       src={logo} />
   )
 }
