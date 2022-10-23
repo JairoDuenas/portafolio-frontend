@@ -22,12 +22,12 @@ export default function Header() {
   } 
 
   return (
-    <nav class="navbar navbar-expand-lg bg-dark bg-gradient">
-      <div class="container-fluid">
-      <div class="navlogo m-2"> {<Logo/>} </div> 
-        <a class="navbar-brand m-3" href="/" >
+    <nav className="navbar navbar-expand-lg bg-dark bg-gradient">
+      <div className="container-fluid">
+      <div className="navlogo m-2"> {<Logo/>} </div> 
+        <a className="navbar-brand m-3" href="/" >
             <h2
-              class="header-name font-monospace"
+              className="header-name font-monospace"
               style={{
                 fontWeight: 500,
                 letterSpacing: '2px',
@@ -40,7 +40,7 @@ export default function Header() {
             </h2>
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -49,15 +49,15 @@ export default function Header() {
           aria-label="Toggle navigation"
           style={{width: '60px', height: '50px'}}
         >
-          <i class="bi bi-list Heading" style={{ color: "white", fontSize: '30px' }}></i>
+          <i className="bi bi-list Heading" style={{ color: "white", fontSize: '30px' }}></i>
         </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active link-info" aria-current="page" href="onHome" onClick={onHome}>Home</a>
-        <a class="nav-link link-info" href="onPortafolio" onClick={onPortafolio}>Portafolio</a>
-        <a class="nav-link link-info" href="onAbout" onClick={onAbout}>Acerca de mí</a>
+    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div className="navbar-nav">
+        <a className="nav-link active link-info" aria-current="page" href="onHome" onClick={onHome}>Home</a>
+        <a className="nav-link link-info" href="onPortafolio" onClick={onPortafolio}>Portafolio</a>
+        <a className="nav-link link-info" href="onAbout" onClick={onAbout}>Acerca de mí</a>
       </div>
-        <span class="badge text-bg-secondary m-3 ">Info</span>
+        <span className="badge text-bg-secondary m-3 ">Info</span>
     </div>
   </div>
 </nav>
