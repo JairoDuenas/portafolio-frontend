@@ -6,7 +6,7 @@ import MainButtons from '../MainButtons';
 
 export default function MainInfo() {
   return (
-    <Stack className='main-info' sx={{height: '100vh'}}>
+    <Stack className='main-info' sx={{height: '38vh'}}>
       <Stack className='main-info-card'
           sx={{
             backgroundColor: '#eceff1',
