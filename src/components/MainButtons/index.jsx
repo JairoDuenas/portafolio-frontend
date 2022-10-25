@@ -27,7 +27,7 @@ export default function MainButtons() {
       <button className='col btn btn-secondary btn-lg go-about' onClick={onAbout}>
         About
       </button>
-      <a class="col btn btn-info btn-lg" role="button"
+      <a className="col btn btn-info btn-lg" role="button"
         href={documentPdf}
         rel="noopener noreferrer"
         target='_blank'

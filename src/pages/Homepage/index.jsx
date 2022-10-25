@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../../containers/Header';
 import MainInfo from '../../components/MainInfo';
-//import CarouselMain from '../../components/Carousel';
+import MainButtons from '../../components/MainButtons';
+import CarouselMain from '../../components/Carousel';
 
 export default function HomePage() {
   return (
@@ -10,8 +11,8 @@ export default function HomePage() {
     >
       <Header />
       <MainInfo />
-      
-      {/* <CarouselMain /> */}
+      <MainButtons />
+      <CarouselMain/>
     </div>
   )
 }

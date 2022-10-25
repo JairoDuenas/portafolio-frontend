@@ -1,19 +1,21 @@
 import React from 'react'
-import fotoJairo from '../../statics/fotoJairo.png'
-import MainButtons from '../MainButtons';
+import fotoJairo from '../../statics/fotoJairo-comprimida.png'
 
 export default function MainInfo() {
   return (
-    <div className="card mb-5 mt-1" style={{width: "100%", height: '16rem',  background: '#cfd8dc'}}>
+    <div className="card mt-1" style={{ background: '#fafafa' }}>
       <div className="row g-0" style={{ alignItems: "center", justifyContent: "center" }}>
       <div className="col-md-3 d-flex" style={{justifyContent: "center"}}>
-        <figure style={{marginTop: "24px"}}>
-          <img
+        <figure style={{ marginTop: "24px" }}>
+          <div className='shadow-lg rounded-circle'>
+            <img
           src={fotoJairo}
           className="img-fluid rounded-circle"
           alt="foto-perfil"
           style={{width: '13rem', height: '13rem'}}
         />
+            </div>
+          
             
         </figure>
       </div>
@@ -27,7 +29,6 @@ export default function MainInfo() {
         </div>
       </div>
       </div>
-      <MainButtons />
   </div>
   )
 }
