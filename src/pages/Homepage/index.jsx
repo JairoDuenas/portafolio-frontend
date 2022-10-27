@@ -3,6 +3,7 @@ import Header from '../../containers/Header';
 import MainInfo from '../../components/MainInfo';
 import MainButtons from '../../components/MainButtons';
 import CarouselMain from '../../components/Carousel';
+import Footer from '../../containers/Footer';
 
 export default function HomePage() {
   return (
@@ -12,7 +13,8 @@ export default function HomePage() {
       <Header />
       <MainInfo />
       <MainButtons />
-      <CarouselMain/>
+      <CarouselMain />
+      <Footer/>
     </div>
   )
 }
