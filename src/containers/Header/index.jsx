@@ -51,12 +51,40 @@ export default function Header() {
           <i className="bi bi-list Heading" style={{ color: "#eceff1", fontSize: '30px' }}></i>
         </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
+        <div className="navbar-nav m-3">
           <a className="nav-link active link-info" aria-current="page" href="onHome" onClick={onHome}>Home</a>
           <a className="nav-link link-info" href="onPortafolio" onClick={onPortafolio}>Portafolio</a>
           <a className="nav-link link-info" href="onAbout" onClick={onAbout}>Acerca de mí</a>
         </div>
-        <span className="badge text-bg-secondary m-3 ">Info</span>
+            <div className='number-phone-header'>
+              <a
+                  className="nav-link"
+                  href="https://api.whatsapp.com/send?phone=3206515236"
+                  role="button"
+                  rel="noopener noreferrer"
+                  target='_blank'
+                  style={{fontSize: "1.5rem", marginRight: '10px' }}
+              >
+                <div className='phone-header d-flex' >
+                  <i className="bi bi-whatsapp" style={{marginRight: '10px', color: '#f4f5f7'}}></i>
+                  <h6 className="number text-light m-0">(057) 320 6515236</h6>
+                </div>
+                </a>
+
+          </div>
+          <div className='email-header'>
+          <a
+              className="btn btn-link p-0 mt-3 mb-3"
+              href="mailto:jairoduenas.ing@gmail.com?Subject=Interesado%20en%20sus%20servicios"
+              role="button"
+              rel="noopener noreferrer"
+              target='_blank'
+              style={{fontSize: "1rem", color: '#f4f5f7'}}
+            >
+              jairoduenas.ing@gmail.com
+            </a>
+        </div>
+    <span className="badge text-bg-secondary m-2 ">Info</span>
     </div>
   </div>
 </nav>

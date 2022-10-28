@@ -25,8 +25,8 @@ export default function Footer() {
 
   return (
     <div className='footer d-flex bg-dark bg-gradient'
-      style={{ justifyContent: 'center', width: '100%'}}>
-      <div className='left-footer d-flex flex-column' style={{justifyContent: 'center', width: '50%'}}>
+      style={{ alignItems:"flex-start", width: '100%'}}>
+      <div className='left-footer d-flex flex-column' style={{justifyContent: 'center', width: '45%', marginBottom: '2rem'}}>
         <div className='logo-svg d-flex p-3' style={{alignItems: 'center'}} >
           <figure className='figure-logo-svg m-0' style={{}}>
             <img className='image-svg rounded-circle' src={logoSvg} alt="logo-svg "
@@ -36,15 +36,16 @@ export default function Footer() {
                 background: '#f4f5f7',
               }} />
           </figure>
-          <a className="navbar-brand m-2" href="/" >
+          <a className="navbar-brand m-2" href="/"  >
             <h2
               className="header-name font-monospace"
+              
               style={{
                 fontWeight: 500,
                 fontSize: '0.9rem',
                 letterSpacing: '2px',
                 color: "#eceff1",
-                margin: '0'
+                margin: '0',
               }}
             >
               Jairodv
@@ -52,37 +53,39 @@ export default function Footer() {
           </a>
         </div>
         <div className='links-footer d-flex flex-column' style={{marginLeft: '1rem'}}>
-          <h5 className='title-links text-info m-1 ' style={{ fontWeight: 500 }}>Links</h5>
+          <h5 className='title-links m-1 ' style={{ fontWeight: 500, color: '#eceff1' }}>Links</h5>
           <nav className="nav flex-column ">
+            <div >
+              <a
+                className="nav-link"
+                aria-current="page"
+                href="onHome"
+                onClick={onHome}
+                style={{opacity: '.6', color: '#eceff1'}}
+              >
+                Home
+              </a>
+            </div>
             <a
-              className="nav-link text-info "
-              aria-current="page"
-              href="onHome"
-              onClick={onHome}
-              style={{opacity: '.6',}}
-            >
-              Home
-            </a>
-            <a
-              className="nav-link text-info"
+              className="nav-link"
               href="onPortafolio"
               onClick={onPortafolio}
-              style={{opacity: '.6',}}
+              style={{opacity: '.6', color: '#eceff1'}}
             >
               Portafolio
             </a>
             <a
-              className="nav-link text-info"
+              className="nav-link"
               href="onAbout"
               onClick={onAbout}
-              style={{opacity: '.6',}}
+              style={{opacity: '.6', color: '#eceff1'}}
             >
               Acerca de mí
             </a>
           </nav>
         </div>
       </div>
-      <footer className="text-center" style={{width: '60%'}} >
+      <footer className="text-center" style={{width: '60%', marginBottom: '2rem'}} >
         {/* <!-- Grid container --> */}
         <div className="container pt-2" >
           {/* <!-- Section: Social media --> */}
@@ -152,7 +155,6 @@ export default function Footer() {
               target='_blank'
             >
               <i className="bi bi-envelope-fill" style={colorIcon}></i>
-              <h6 className="email text-light">jairoduenas.ing@gmail.com</h6>
             </a>
             <a
               style={sizeIcon}
@@ -162,17 +164,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               target='_blank'
             >
-              <i class="bi bi-whatsapp" style={colorIcon}></i>
+              <i className="bi bi-whatsapp" style={colorIcon}></i>
               <h6 className="email text-light">(057) 320 6515236</h6>
             </a>
           </section>
-          {/* <!-- Section: Social media --> */}
         </div>
-        {/* <!-- Grid container --> */}
-
-        {/* <!-- Copyright --> */}
         <div className="text-center text-light p-1" style={{opacity: '.6', fontSize: '0.8rem'}}>
-          © 2022 Copyright: Derechos reservados, Jairo Dueñas
+          © 2022 Copyright: Todos los derechos reservados, Jairo Dueñas
         </div>
       </footer>
     </div>
