@@ -4,6 +4,7 @@ import MainInfo from '../../components/MainInfo';
 import MainButtons from '../../components/MainButtons';
 import CarouselMain from '../../components/Carousel';
 import Footer from '../../containers/Footer';
+import MySkills from '../../components/MySkills';
 
 export default function HomePage() {
   return (
@@ -14,7 +15,8 @@ export default function HomePage() {
       <MainInfo />
       <MainButtons />
       <CarouselMain />
-      <Footer/>
+      <MySkills /> 
+      <Footer />
     </div>
   )
 }
