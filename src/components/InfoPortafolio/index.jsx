@@ -167,11 +167,16 @@ export default function InfoPortafilo() {
           className="card h-120 text-bg-secondary shadow mb-4"
           style={{ width: "18rem" }}
         >
-          <img src={imgAsincronismo} className="card-img-top" alt="imagen-asincronismo" />
+          <img
+            src={imgAsincronismo}
+            className="card-img-top"
+            alt="imagen-asincronismo"
+          />
           <div className="card-body">
             <h5 className="card-title">Last Music</h5>
             <p className="card-text">
-              Proyecto de asincronismo, consumiendo API de SHAZAM, mustra listado de canciones.
+              Proyecto de asincronismo, consumiendo API de SHAZAM, mustra
+              listado de canciones.
             </p>
             <div className="card-footer">
               <a
@@ -189,7 +194,11 @@ export default function InfoPortafilo() {
           className="card h-120 text-bg-secondary shadow mb-4"
           style={{ width: "18rem" }}
         >
-          <img src={imgClonGoogle} className="card-img-top" alt="imagen-clon-google" />
+          <img
+            src={imgClonGoogle}
+            className="card-img-top"
+            alt="imagen-clon-google"
+          />
           <div className="card-body">
             <h5 className="card-title">Clon Google</h5>
             <p className="card-text">
@@ -211,12 +220,14 @@ export default function InfoPortafilo() {
           className="card h-120 text-bg-secondary shadow mb-4"
           style={{ width: "18rem" }}
         >
-          <img src={imgAnimationBunny} className="card-img-top" alt="imagen-animation-bunny" />
+          <img
+            src={imgAnimationBunny}
+            className="card-img-top"
+            alt="imagen-animation-bunny"
+          />
           <div className="card-body">
             <h5 className="card-title">Animation Bunny</h5>
-            <p className="card-text">
-              Proyecto de animaciones en HTML y CSS.
-            </p>
+            <p className="card-text">Proyecto de animaciones en HTML y CSS.</p>
             <div className="card-footer">
               <a
                 href="https://jairoduenas.github.io/Animation-Bunny-css/"
@@ -233,11 +244,16 @@ export default function InfoPortafilo() {
           className="card h-120 text-bg-secondary shadow mb-4"
           style={{ width: "18rem" }}
         >
-          <img src={imgBatatabit} className="card-img-top" alt="imagen-batatabit" />
+          <img
+            src={imgBatatabit}
+            className="card-img-top"
+            alt="imagen-batatabit"
+          />
           <div className="card-body">
             <h5 className="card-title">Batatabit</h5>
             <p className="card-text">
-              App que muestra precios de criptomonedas sin funcionalidad, en HTML y CSS puro.
+              App que muestra precios de criptomonedas sin funcionalidad, en
+              HTML y CSS puro.
             </p>
             <div className="card-footer">
               <a

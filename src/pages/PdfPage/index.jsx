@@ -1,9 +1,8 @@
-import { Stack } from '@mui/material';
 import React from 'react'
 
 export default function PdfPage() {
   return (
-    <Stack
+    <div className='doc-cv'
       position='absolute'
       width='100%'
       height='100%'
@@ -16,6 +15,6 @@ export default function PdfPage() {
       >
         </object>
       pdf
-    </Stack>
+    </div>
   )
 }

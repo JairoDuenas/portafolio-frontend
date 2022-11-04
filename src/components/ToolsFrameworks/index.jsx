@@ -13,7 +13,7 @@ export default function ToolsFrameworks() {
         <h6>Herramientas y Frameworks CSS</h6>
       </div>
       <div
-        className="tools-frameworks m-2 d-flex mt-4" 
+        className="tools-frameworks m-2 d-flex mt-4"
         style={{ justifyContent: "space-around" }}
       >
         <div
