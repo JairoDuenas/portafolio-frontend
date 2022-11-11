@@ -2,6 +2,7 @@ import React from "react";
 import imgHtml from "../../img/html-5.png";
 import imgCss from "../../img/css.png";
 import imgJs from "../../img/js.png";
+import imgPython from "../../img/python.png"
 import imgReact from "../../img/react.png";
 import imgVue from "../../img/vue.png";
 import ToolsFrameworks from "../ToolsFrameworks";
@@ -15,7 +16,7 @@ export default function MySkills() {
         style={{ background: "#cfd8dc" }}
       >
         <div className="skills-frameworks text-center col-sm mt-2">
-          <h6>Maquetación, estilos, lenguaje y Frameworks</h6>
+          <h6>Maquetación, estilos, lenguajes y Frameworks</h6>
         </div>
         <div className="skill-html mb-4 mt-4">
           <div
@@ -80,6 +81,27 @@ export default function MySkills() {
             </div>
           </div>
         </div>
+        <div className="skill-python mb-3">
+          <div
+            className="icon-vue-progress d-flex "
+            style={{ justifyContent: "space-evenly", alignItems: "center" }}
+          >
+            <img src={imgPython} alt="imagen-python" style={{ width: "3rem" }} />
+            <div className="progress shadow" style={{ width: "85%" }}>
+              <div
+                className="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-label="Animated striped example"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style={{ width: "60%", backgroundColor: "#0f9aa1" }}
+              >
+                60%
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="skill-react mb-3">
           <div
             className="icon-react-progress d-flex "
@@ -122,6 +144,7 @@ export default function MySkills() {
             </div>
           </div>
         </div>
+        
       </div>
       <ToolsFrameworks />
     </div>
