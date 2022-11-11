@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import documentPdf from "../../docs/cv_dev_Jhon_Jairo_Dueñas_Vega-09-2022";
+import documentPdf from "../../docs/cv_dev_Jhon_Jairo_Dueñas_Vega-09-2022.pdf";
 
 export default function MainButtons() {
   const navigate = useNavigate();
